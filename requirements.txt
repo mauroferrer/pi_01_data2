@@ -1,0 +1,4 @@
+uvicorn
+pandas
+numpy
+FastApi
