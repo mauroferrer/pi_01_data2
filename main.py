@@ -99,7 +99,7 @@ def get_director(director:str):
 
 muestra_aleatoria = data.head(5000) # Utilizamos solo 20 mil filas del datasets 
 
-tfidf = TfidfVectorizer(stop_words='english') #Convertimos el texto en una matriz de caracteristicas numericas
+tfidf = TfidfVectorizer(stop_words='english') #Convertimos el texto en una matriz de caracteristicas numericas para facilitar el calculo de similitudes
 
 muestra_aleatoria['overview'] = muestra_aleatoria['overview'].fillna('') # Remplazamos valores nulos por un espacio vacio para evitar errores
 
