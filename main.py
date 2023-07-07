@@ -113,7 +113,7 @@ cosine_similarity = linear_kernel( tdfid_matrix, tdfid_matrix) # Calculamos la s
 
 
 ### Creamos la funcion 'recomendacion' que nos va a recomendar 5 peliculas en base al parametro titulo que le pasemos. ###
-
+@app.get("/recomendacion/{titulo}")
 def recomendacion(titulo: str):
     idx = muestra_aleatoria[muestra_aleatoria['title'] == titulo].index[0] # Buscamos el indice titulo en nuestro datasets
 
