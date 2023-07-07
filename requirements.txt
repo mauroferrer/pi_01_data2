@@ -3,4 +3,4 @@ pandas
 numpy
 FastApi
 matplotlib 
-sklearn
+scikit-learn
