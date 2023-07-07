@@ -97,7 +97,7 @@ def get_director(director:str):
 
       ### CREACION DEL MODELO DE RECOMENDACIONES ### 
 
-muestra_aleatoria = data.head(9000) # Utilizamos solo 20 mil filas del datasets 
+muestra_aleatoria = data.head(5000) # Utilizamos solo 20 mil filas del datasets 
 
 tfidf = TfidfVectorizer(stop_words='english') #Convertimos el texto en una matriz de caracteristicas numericas
 
