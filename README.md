@@ -9,7 +9,7 @@
 
 </p>
 
-## ¡Bienvenido/a a este proyecto donde haremos un proceso de ETL, un analisis EDA y un modelo de ML(Machine learning) para hacer un sistema de recomendacion, trabajando con plataformas de streaming  
+## ¡Bienvenido/a  a este proyecto donde haremos un proceso de ETL, un analisis EDA y un modelo de ML(Machine learning) para hacer un sistema de recomendacion, especificamente de peliculas!.
 
 <hr>  
 
