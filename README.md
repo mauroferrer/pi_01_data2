@@ -118,6 +118,7 @@
 ### - Hacemos deteccion de outliers para detectar valores incorrector o incoherentes
 ### - Histograma de los datos para resumir la informacion de los mismos
 ### - Nube de palabras para identificar los temas mas recurrentes
+### - Graficos de dispersion
 
 <hr>
 
