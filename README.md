@@ -56,17 +56,17 @@
 ## **PASO 1:**
 ### *ETL:*
 
-### * Algunos campos, como belongs_to_collection, production_companies y otros están anidados, esto es o bien tienen un diccionario o una lista como valores en cada fila, los desanidamos para poder hacer algunas de las consultas en la API!
+### 1.1 Algunos campos, como belongs_to_collection, production_companies y otros están anidados, esto es o bien tienen un diccionario o una lista como valores en cada fila, los desanidamos para poder hacer algunas de las consultas en la API!
 
-### * Los valores nulos de los campos revenue, budget los rellenamos por el número 0.
+### 1.2 Los valores nulos de los campos revenue, budget los rellenamos por el número 0.
 
-### * Los valores nulos del campo release date los eliminamos.
+### 1.3 Los valores nulos del campo release date los eliminamos.
 
-### * A las columnas fechas, las pasamos al formato AAAA-mm-dd, además creamos la columna release_year donde extraemos el año de la fecha de estreno.
+### 1.4 A las columnas fechas, las pasamos al formato AAAA-mm-dd, además creamos la columna release_year donde extraemos el año de la fecha de estreno.
 
-### * Creamos la columna con el retorno de inversión, llamada return con los campos revenue y budget, dividiendo estas dos últimas revenue / budget, cuando no hay datos disponibles para calcularlo, deberá tomar el valor 0.
+### 1.5 Creamos la columna con el retorno de inversión, llamada return con los campos revenue y budget, dividiendo estas dos últimas revenue / budget, cuando no hay datos disponibles para calcularlo, deberá tomar el valor 0.
 
-### * Eliminamos  las columnas que no serán utilizadas, video, imdb_id, adult, original_title, poster_path y homepage.
+### 1.6 Eliminamos  las columnas que no serán utilizadas, video, imdb_id, adult, original_title, poster_path y homepage.
 
                Econtramos el ETL en el archivo llamado "ETL.ipynb"
 
@@ -122,18 +122,18 @@
 <hr>
 
 ## **PASO 5:**
-### *Creamos el modelo que nos va a recomendar peliculas, segun la pelicula vista*
-### *Utilizamos solo 20 mil filas del datasets
-### *Convertimos el texto en una matriz de caracteristicas numericas para facilitar el calculo de similitudes
-### *Remplazamos valores nulos por un espacio vacio para evitar errores
-### *Analizamos y extraemos las palabras mas importantes con TF-IDF Y creamos una matriz que representa la importancia de las palabra en cada descripcion esto nos sirve para encontrar las peliculas similares
-### *Calculamos la similitud coseno entre todas las descripciones la similitud coseno es una medida que nos indica cuanto se parecen dos vectores
-### *Creamos una funcion recomendacion(titulo:str) y nos devuelve las 5 peliculas mas similares a la pelicula pasada como parametro
-### *Accedemos a la fila 'idx' de la matriz 'simitulud coseno' enumeramos filas, creamos lista de tuplas, donde cada tupla contiene el indice y similitud coseno de la pelicula
-### *Ordenamos la lista de tuplas en funcion de la similitud coseno de manera descendente, guardamos resultados en variable sim_scores
-### *Creamos lista de las 5 mejores primeras peliculas
-### *Seleccionamos los titulos segun los indices y los pasamos a una lista
-### *Retornamos la lista
+### 5.1 Creamos el modelo que nos va a recomendar peliculas, segun la pelicula vista*
+### 5.2 Utilizamos solo 20 mil filas del datasets
+### 5.3 Convertimos el texto en una matriz de caracteristicas numericas para facilitar el calculo de similitudes
+### 5.4 Remplazamos valores nulos por un espacio vacio para evitar errores
+### 5.5 Analizamos y extraemos las palabras mas importantes con TF-IDF Y creamos una matriz que representa la importancia de las palabra en cada descripcion esto nos sirve para encontrar las peliculas similares
+### 5.6 Calculamos la similitud coseno entre todas las descripciones la similitud coseno es una medida que nos indica cuanto se parecen dos vectores
+### 5.6 Creamos una funcion recomendacion(titulo:str) y nos devuelve las 5 peliculas mas similares a la pelicula pasada como parametro
+### 5.7 Accedemos a la fila 'idx' de la matriz 'simitulud coseno' enumeramos filas, creamos lista de tuplas, donde cada tupla contiene el indice y similitud coseno de la pelicula
+### 5.8 Ordenamos la lista de tuplas en funcion de la similitud coseno de manera descendente, guardamos resultados en variable sim_scores
+### 5.9 Creamos lista de las 5 mejores primeras peliculas
+### 5.10 Seleccionamos los titulos segun los indices y los pasamos a una lista
+### 5.11 Retornamos la lista
 
 <hr>
 
