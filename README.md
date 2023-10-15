@@ -1,3 +1,5 @@
+![image](https://github.com/mauroferrer/pi_01_data2/assets/100243583/5f25ec9a-0d6e-42f6-b54b-a384a4c3e041)
+
 # HENRY Proyecto Integrador 1  
 ## Mauro Adan Ferrera
 pi_01_data2  
