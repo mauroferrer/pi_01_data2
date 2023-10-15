@@ -1,13 +1,3 @@
-<img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
-
-# <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
-
-# <h1 align=center>**`Machine Learning Operations (MLOps) - Mauro Ferrera'**</h1>
-
-<p align="center">
-<img src="https://tse3.mm.bing.net/th?id=OIP.LjaDN-lANs-PZ3Ni_TajnAHaF5&pid=Api&P=0&h=180"  height=300>
-
-</p>
 # HENRY Proyecto Integrador 1  
 ## Mauro Adan Ferrera
 pi_01_data2  
